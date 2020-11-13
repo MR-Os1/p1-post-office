@@ -20,7 +20,6 @@ public class Storage {
     private final List<Package> packages = new ArrayList<>();
 
     private Storage(){
-        INSTANCE = new Storage();
     }
 
     public static Storage getINSTANCE(){
@@ -57,7 +56,8 @@ public class Storage {
     }
 
     public Customer addCustomer(Customer customer){
-        return customerMap.put(customer.getNationalCode(),customer);
+        customerMap.put(customer.getNationalCode(),customer);
+        return customer;
     }
 
     public City addCity(City city){

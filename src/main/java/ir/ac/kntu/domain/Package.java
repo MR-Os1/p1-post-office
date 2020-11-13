@@ -163,6 +163,23 @@ public class Package {
     }
 
     @Override
+    public String toString() {
+        return "Package{" +
+                "name='" + name + '\'' +
+                ", receiver=" + receiver +
+                ", branch=" + branch +
+                ", source=" + source +
+                ", destination=" + destination +
+                ", wight=" + wight +
+                ", sendingDate=" + sendingDate +
+                ", receivingDate=" + receivingDate +
+                ", shipmentKinds=" + shipmentKinds +
+                ", shipmentStatus=" + shipmentStatus +
+                ", shipmentWays=" + shipmentWays +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(name, receiver, branch, source, destination, wight, sendingDate,
                 receivingDate, shipmentKinds, shipmentStatus, shipmentWays);

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum ShipmentKinds {
-    NORMAL(1),
-    SPECIAL(2);
+    NORMAL(0),
+    SPECIAL(1);
 
     private int id;
 
@@ -13,7 +13,7 @@ public enum ShipmentKinds {
 
     static {
         for (ShipmentKinds shipmentKinds: ShipmentKinds.values())
-            SHIPMENT_KINDS.set(shipmentKinds.getId(),shipmentKinds);
+            SHIPMENT_KINDS.add(shipmentKinds.getId(),shipmentKinds);
     }
 
     ShipmentKinds(int id) {

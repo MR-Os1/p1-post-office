@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum ShipmentStatus {
-    IN_STORAGE(1),
-    DELIVERED(2),
-    SENT(3);
+    IN_STORAGE(0),
+    DELIVERED(1),
+    SENT(2);
 
     private int id;
 
@@ -17,7 +17,7 @@ public enum ShipmentStatus {
 
     static {
         for (ShipmentStatus status: ShipmentStatus.values())
-            shipmentStatuses.set(status.getId(),status);
+            shipmentStatuses.add(status.getId(),status);
     }
 
     public int getId() {

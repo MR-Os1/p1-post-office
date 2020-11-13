@@ -15,7 +15,7 @@ public enum MenuOptions {
     FIND_CUSTOMER(7,"Find Customer"),
     FIND_PACKAGE_BY_SOURCE_PLACE(8,"Find Package By Source City"),
     FIND_PACKAGE_BY_DESTINATION_PLACE(9,"Find Package By Destination City"),
-    FILTER_PACKAGE_BY_STATUS(10,"Find Package By Destination City"),
+    FILTER_PACKAGE_BY_STATUS(10,"Find Package By Status"),
     SET_PACKAGE_DATE(11,"Set Packages Date"),
     IMPORT_TEST_DATA(12,"Import test Data");
 

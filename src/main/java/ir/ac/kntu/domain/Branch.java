@@ -59,6 +59,15 @@ public class Branch {
     }
 
     @Override
+    public String toString() {
+        return "Branch{" +
+                "countWorkers=" + countWorkers +
+                ", branchCode='" + branchCode + '\'' +
+                ", branchCity=" + branchCity +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(countWorkers, branchCode, branchCity);
     }

@@ -113,10 +113,11 @@ public class Menu {
         City c1 = Storage.getINSTANCE().addCity(new City("C1", 10.25, 12.34));
         City c2 = Storage.getINSTANCE().addCity(new City("C2", 15.68, 25.42));
         Branch b1 = Storage.getINSTANCE().addBranch(new Branch(10, "B1", c1));
-        Storage.getINSTANCE().addBranch(new Branch(25,"B2",c2));
+        Branch b2 = Storage.getINSTANCE().addBranch(new Branch(25, "B2", c2));
         Customer ali = Storage.getINSTANCE().addCustomer(new Customer("Ali", "1254794892"));
         Storage.getINSTANCE().addCustomer(new Customer("Mohammad","1578948325"));
         Storage.getINSTANCE().addPackage(new Package("p1",ali,b1,c1,c2,12.54,ShipmentKinds.NORMAL,ShipmentWays.GROUND));
+        Storage.getINSTANCE().addPackage(new Package("p2",ali,b2,c1,c2,12,ShipmentKinds.SPECIAL,ShipmentWays.GROUND));
     }
 
     private void getPackageStatus(Scanner scanner) {

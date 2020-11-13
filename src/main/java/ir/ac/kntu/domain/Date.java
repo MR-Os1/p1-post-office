@@ -136,9 +136,13 @@ public class Date{
     public boolean isGreaterDateThan(Date date){
         if (this.getYear()>date.getYear())
             return true;
-        if (this.getMonth()> date.getMonth())
+        if (this.getYear() < date.getYear())
+            return false;
+        if (this.getMonth() > date.getMonth())
             return true;
-        if (this.getDay()> date.getDay())
+        if (this.getMonth() < date.getMonth())
+            return false;
+        if (this.getDay() > date.getDay())
             return true;
         return false;
     }

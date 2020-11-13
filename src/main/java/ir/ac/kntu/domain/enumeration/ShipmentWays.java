@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum ShipmentWays {
-    GROUND(1),
-    AIR(2),
-    SEA(3);
+    GROUND(0),
+    AIR(1),
+    SEA(2);
     private int id;
 
     private static final List<ShipmentWays> shipmentWays = new ArrayList<>();
